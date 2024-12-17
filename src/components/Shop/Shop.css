@@ -7,8 +7,22 @@
 .products-container {
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 45px;
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens: 3 columns */
+@media (min-width: 1024px) {
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .proceed-link {
   text-decoration: none;
